@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Renner Link Main</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/dc1447e003.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="headertext">
+        <p>Creator</p>
+        <h1>Hi, I'm <span>Renner</span><br>From Portland, OR</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------about----------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="aboutcol1">
+          <img src="images/aboutportrait.jpg">
+        </div>
+        <div class="aboutcol2">
+          <h1 class="subtitle">About Me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod eros eget elit vulputate, eget
+            maximus tortor ultricies. Morbi pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur euismod eros eget elit vulputate, eget maximus tortor ultricies. Morbi pellentesque.</p>
+
+          <div class="tabtitles">
+            <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+            <p class="tablinks" onclick="opentab('experience')">Experience</p>
+            <p class="tablinks" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tabcontents activetab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+              <li><span>App Development</span><br>Building Android/iOS apps</li>
+            </ul>
+          </div>
+          <div class="tabcontents" id="experience">
+            <ul>
+              <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+              <li><span>2019 - 2021</span><br>Team Lead at Starship LLC.</li>
+              <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+              <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+            </ul>
+          </div>
+          <div class="tabcontents" id="education">
+            <ul>
+              <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+              <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+              <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------Portfolio-------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Portfolios</h1>
+      <div class="worklist">
+        <div class="work">
+          <img src="images/work1(editing).PNG">
+          <div class="layer">
+            <h3>Stop Motion</h3>
+            <p>Experience some creative animations I've created with Lego!</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work1(editing).PNG">
+          <div class="layer">
+            <h3>Brick City</h3>
+            <p>Learn about a full scale city made entirely out of Lego!</p>
+            <a href="https://brickcity.rennerlinkpdx.repl.co/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work1(editing).PNG">
+          <div class="layer">
+            <h3>Engineering<br>& Robotics</h3>
+            <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ---------Hobbies---------- -->
+  <div id="hobbies">
+    <div class="container">
+      <h1 class="subtitle">My Hobbies</h1>
+      <div class="hobbieslist">
+        <div>
+          <i class="fa-solid fa-clapperboard"></i>
+          <h2>Video Editing</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod eros eget elit vulputate, eget
+            maximus tortor ultricies. Morbi pellentesque.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-tree-city"></i>
+          <h2>Lego</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod eros eget elit vulputate, eget
+            maximus tortor ultricies. Morbi pellentesque.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-person-biking"></i>
+          <h2>Athletics</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod eros eget elit vulputate, eget
+            maximus tortor ultricies. Morbi pellentesque.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------contact------------ -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contactleft">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> rennerlinkpdx@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> (971) 990-5968</p>
+          <a href="images/RennerLinkResume_2023.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contactright">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Renner. Made with <i class="fa-solid fa-heart"></i> by Renner Link</p>
+    </div>
+  </div>
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tablinks");
+    var tabcontents = document.getElementsByClassName("tabcontents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("activelink");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("activetab");
+      }
+      event.currentTarget.classList.add("activelink");
+      document.getElementById(tabname).classList.add("activetab");
+    }
+
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+</body>
+
+</html>
